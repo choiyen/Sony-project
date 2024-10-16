@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Sony</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style_index.css" />
+    <link rel="stylesheet" href="./css/nav_footer.css" />
+    <link rel="stylesheet" href="./css/alert.css" />
+    <script src="./js/script_index.js"></script>
+    <script type="module" src="./js/script_data.js"></script>
+    <script src="./js/nav_footer.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="mainPage">
+        <img src="./img/Bigball1.png" alt="decoration ball" />
+        <img src="./img/Bigball2.png" alt="decoration ball" />
+        <img src="./img/smallball1.png" alt="decoration ball" />
+        <img src="./img/smallball2.png" alt="decoration ball" />
+        <img src="./img/herder_shadow.png" alt="headPhone shadow" />
+        <span>scroll</span>
+      </section>
+      <section id="bestseller">
+        <h2><span>베스트 셀러</span></h2>
+        <div id="bestsellerWrap">
+          <div class="box">
+            <img src="./img/earphone.png" alt="이어폰" id="earphone" />
+            <!-- <img src="./img/herder_shadow.png" alt="item shadow" /> -->
+            <h3>WF-1000XM5</h3>
+            <p>이것은 작게 진화한 헤드폰</p>
+            <button class="button">자세히 보기</button>
+          </div>
+          <div class="box">
+            <img src="./img/headphone.png" alt="헤드폰" id="headPhone" />
+            <!-- <img src="" alt="item shadow" /> -->
+            <h3>WH-1000XM5</h3>
+            <p>#몰입의 즐거움 #스터디헤드폰</p>
+            <button class="button">자세히 보기</button>
+          </div>
+          <div class="box">
+            <img src="./img/speaker.png" alt="블루투스 스피커" id="speaker" />
+            <!-- <img src="" alt="item shadow" /> -->
+            <h3>SRS-XB100</h3>
+            <p>깊고 강력한 사운드, 사이즈만 미니</p>
+            <button class="button">자세히 보기</button>
+          </div>
+        </div>
+        <!-- 팝업 창 -->
+        <article id="popup">
+          <button><span>닫기버튼</span>X</button>
+          <div class="imgContainer"></div>
+          <div class="productPopup">
+            <form>
+              <label for="product">제품 선택</label>
+              <select name="product" id="product">
+                <option value="" selected disabled>제품을 선택하세요</option>
+              </select>
+              <label for="count">갯수</label>
+              <div id="countButtonBox">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+              </div>
+              <div>총 금액 <span></span></div>
+              <button type="button" class="button lg-button formButton">
+                장바구니에 담기
+              </button>
+            </form>
+          </div>
+        </article>
+      </section>
+      <section id="skillSection">
+        <div>
+          <h2><span>수준 높은 기술력</span></h2>
+          <div id="textBox">
+            <p>
+              <span>소니의 음향 기술은 그 뿌리부터<br /></span>
+            </p>
+            <p>
+              <span>혁신의 중심에 있었습니다. <br /></span>
+            </p>
+            <p>
+              <span>소니가 일본 최고의 음향 브랜드로<br /></span>
+            </p>
+            <p><span>자리잡을 수 있었던 비결은 무엇일까요?</span></p>
+          </div>
+          <a href="/skill.html" class="button lg-button">자세히 보기</a>
+          <!-- <button class="button lg-button">자세히 보기</button> -->
+        </div>
+        <img src="./img/skillImg.png" alt="르세라핌 소니 콜라보 이미지" />
+      </section>
+      <section id="companySection">
+        <img src="./img/people.png" alt="모리타 아키오 이미지" />
+        <div>
+          <h2><span>소니의 역사와 발전과정</span></h2>
+          <div id="speechBox">
+            <p><span>"실수를 두려워하지 말라!!</span></p>
+            <p><span>그러나 똑같은 실수를 다시 하지 않도록 하라!!"</span></p>
+          </div>
+          <span><b>소니 창업주</b> 모리타 아키오</span>
+          <a href="/biography.html" class="button lg-button">자세히 보기</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

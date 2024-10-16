@@ -1,0 +1,341 @@
+/* Global Styles */
+body {
+  font-family: "GmarketSans", "Arial", sans-serif;
+  background-color: lightgray;
+  color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  height: 500px;
+  padding-top: 70px;
+}
+
+.skill-title {
+  font-family: "GmarketSans", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  letter-spacing: 0.1em;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.skill-title::after {
+  content: "";
+  width: 20px;
+  height: 300px;
+  background-color: #3f3f3f;
+  position: absolute;
+  left: -30px;
+  top: 45px;
+}
+
+/* Product Image */
+.product-image {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.product-image.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Grid Container */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Box Styling */
+.box {
+  background-color: lightgray;
+  padding: 40px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease, box-shadow 1s ease;
+}
+
+.box.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.inner-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-box {
+  margin-left: 20px;
+  margin-right: 7%;
+  text-align: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+img {
+  border-radius: 30px;
+}
+
+/* Headings */
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  margin: 10px 0;
+  line-height: normal;
+}
+
+/* Icon Section */
+.section {
+  background-color: #3f3f3f;
+  border-radius: 52px 52px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.section > h2 {
+  color: white;
+  margin-bottom: 2%;
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icon-container div:hover {
+  transform: scale(1.1);
+}
+
+.icon-container div:hover .icon {
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+
+
+@media (max-width: 904px) {
+  .skills {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .skill-title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .skill-title::after {
+    content: "";
+    height: 200px;
+  }
+
+  .inner-box-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .icon-container {
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .inner-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .skill-title {
+    font-size: 80px;
+    line-height: 90px;
+    margin-top: 30px;
+  }
+
+  .skill-title::after {
+    width: 15px;
+    height: 170px;
+    left: -20px;
+    top: 45px;
+  }
+
+  .product-image {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .icon-container {
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .inner-box-container {
+    flex-direction: column;
+  }
+
+  .inner-box {
+    margin: 0;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .skills {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .skill-title {
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 80px;
+  }
+
+  .skill-title::after {
+    width: 10px;
+    height: 100px;
+    left: -15px;
+    top: 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .inner-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-box {
+    margin: 0;
+  }
+
+  .section {
+    padding: 20px 0;
+  }

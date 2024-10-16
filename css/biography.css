@@ -1,0 +1,107 @@
+@media screen and (max-width: 600px) {
+  th img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .left {
+    padding-left: 10px;
+  }
+  .right {
+    padding-right: 10px;
+  }
+  .v-line {
+    height: 5700px;
+  }
+  th p {
+    font-size: 10px;
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  th img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .left {
+    padding-left: 50px;
+  }
+  .right {
+    padding-right: 50px;
+  }
+  .v-line {
+    height: 9180px;
+  }
+  th p {
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  th {
+    width: 400px;
+    height: 70px;
+    padding: 100px;
+  }
+
+  th p {
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .right p {
+    text-align: right;
+  }
+  th img {
+    width: 300px;
+    height: 300px;
+  }
+
+  th div {
+    background: transparent;
+  }
+
+  .v-line {
+    height: 17310px;
+  }
+}
+
+.v-line {
+  border-left: thick solid #32a1ce;
+  position: absolute;
+  left: 50%;
+}
+
+th p {
+  margin-top: 25px;
+}
+
+.equilateral-triangle {
+  width: 0px;
+  height: 0px;
+  border-right: 17.73502px solid transparent;
+  border-left: 17.73502px solid transparent;
+  border-top: 30px solid black;
+  margin-left: -20px;
+  position: sticky;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
