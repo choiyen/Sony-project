@@ -92,8 +92,8 @@
 - 코드 간결화 : ejs를 사용해 반복이 가능한 부분은 줄일 예정.
 
 ### 10. 프로젝트 후기
-[1차 프로젝트 중간 후기] https://storys03.tistory.com/24
-[1차 프로젝트 최종 후기] https://storys03.tistory.com/25
+- [1차 프로젝트 중간 후기] https://storys03.tistory.com/24
+- [1차 프로젝트 최종 후기] https://storys03.tistory.com/25
 
 
 
