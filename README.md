@@ -70,30 +70,29 @@
 
 ---
 ### 7. 페이지별 기능
-![메인페이지](https://github.com/user-attachments/assets/aaa570e2-4e41-445a-9e41-14a9214ce814)
 
 #### [메인화면] 
+![메인페이지](https://github.com/user-attachments/assets/aaa570e2-4e41-445a-9e41-14a9214ce814)
+
 - 메인페이지의 헤드폰이 스크롤 시 두번째 색션까지 따라와서 배치될 수 있도록 구현
 - 메인 카테고리의 상품을 클릭 할 시 장바구니에 제품이 담기는 기능 구현
 
-- ![연도표](https://github.com/user-attachments/assets/689b9aab-af12-4319-90c2-6f4842a6f448)
+### [회사페이지] - 본인 담당
 
+![연도표](https://github.com/user-attachments/assets/689b9aab-af12-4319-90c2-6f4842a6f448)
 
 https://github.com/user-attachments/assets/2bd63b19-76c7-406e-80da-d8886803ed90
 
-
-### [회사페이지] - 본인 담당
 - 코드의 재사용성을 높이기 위해서 탭 버튼 부분과 이미지 슬라이드 부분 등 공통된 부분은 최대한 통일성을 가지도록 개발하였습니다.
 - 이미지 슬라이드의 유동적인 방향과 속도를 구현하기 위해 Swiper JS 라이브러리 함수를 참조함.
 - 이미지 교체 시 이미지 설명이 변경될 수 있도록 배열을 만들어 관리하였습니다.
 - 제이쿼리를 사용하여, 이미지를 클릭했을 떄, 그림에 대한 설명이 alt에 추가되도록 구현
 
 
+### [기술페이지]
 
 https://github.com/user-attachments/assets/7dba47f1-a235-463d-b768-c5300d9132c4
 
-
-### [기술페이지]
 - JS와 DOM을 최대한 활용하여, 이미지 컨텐츠가 스크롤 방향에 따라서 나타나고 사라지도록 구현
 - 호환 가능한 어플들 아이콘에 마우스를 올리면 크기가 커지며 클릭 시 페이지 이동이 가능함.
     
